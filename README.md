@@ -23,7 +23,9 @@ Repesentación de Objetos
 
 
 Para crear un Objeto en Java, y propiamente en Android Studio, siguiendo los principios de una programación por modelos, crearemos un paquete denominado clases
+
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/objetoLavadora.png)
+
 
 
  Inicialmente solo crearemos dos atributos: marca y modelo, estos atributos son de tipo String
