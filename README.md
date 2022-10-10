@@ -128,6 +128,32 @@ A través de nuestro objeto podemos generar nuevas instancias de él, ahora lo c
 
 ````
 
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/runObjeto1y2.png)
+
+El código completo quedaría de esta forma:
+
+````
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        //Creando una instancia de nuestro objeto
+        Lavadora lavadora   = new Lavadora();
+        lavadora.setMarca("Mabe");
+        lavadora.setModelo("Lavado Autómatico");
+        Log.d("Objeto lavadora", lavadora.toString());
+
+        //Creando una segunda instancia de nuestro objeto
+        Lavadora lavadoraSecadora = new Lavadora("IEM", "Secado Automático");
+        Log.d("Objeto lavadora-Secadora", lavadoraSecadora.toString());
+        
+    }
+}
+
+````
 
 
 
