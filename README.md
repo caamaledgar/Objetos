@@ -37,7 +37,7 @@ Para crear un Objeto en Java, y propiamente en Android Studio, siguiendo los pri
 }
 ````
 
-En la misma clase, porterior a crear los atributos, es necesario crear los constructores, para que los objetos pudan instanciarse, unos sin parámetros y otro con los parámetros que queremos ingrear al objeto de manera directa.
+En la misma clase, porterior a crear los atributos, es necesario crear los constructores, para que los objetos pudan instanciarse, unos sin parámetros y otro con los parámetros que queremos ingresar al objeto de manera directa.
 
 ````
     // Constructores
@@ -49,6 +49,44 @@ En la misma clase, porterior a crear los atributos, es necesario crear los const
         this.modelo = modelo;
     }
 ````
+
+
+Para poder registrar y extraer los valores en nuesto objeto es necesario crear los métos getter y setter
+
+````
+    // Getter & Setter
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+````
+
+Como un método adicional que nos puede servir para traer los valores con los que nuestro objeto cuenta en un momento de su ciclo de vida, podemos crear el toString
+
+````
+    // ToString
+    @Override
+    public String toString() {
+        return "Lavadora{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
+    }
+````
+
+
+
 
 
 
