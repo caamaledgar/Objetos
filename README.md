@@ -3,18 +3,22 @@
 Proyecto para la clase de Aplicaciones Móviles para el Instituto Tecnólogico de Chiná, con el objetivo de reforzar el conocimiento del paradigma de la Programación Orientada a Objetos
 
 Paradigmas de la Programación 
+
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/paradigmasProgramacionObjetos.png)
 
 
 ¿Qué es un Objeto?
+
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/queEsUnObjeto.png)
 
 
 Paquete
+
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/Objeto.png)
 
 
 Repesentación de Objetos
+
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/clases.png)
 
 
