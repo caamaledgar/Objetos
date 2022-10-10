@@ -244,5 +244,3 @@ objeto2
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/objeto2.png)
 
 
-
-
