@@ -15,8 +15,6 @@ public class Lavadora {
     }
 
     // Getter & Setter
-
-
     public String getMarca() {
         return marca;
     }

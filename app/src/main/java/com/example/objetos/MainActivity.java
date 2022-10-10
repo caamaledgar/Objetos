@@ -21,7 +21,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Creando una instancia de nuestro objeto
+        Lavadora lavadora   = new Lavadora();
 
+        lavadora.setMarca("Mabe");
+        lavadora.setModelo("Lavado Autómatico");
+
+        Log.d("OBjeto lavadora", lavadora.toString());
 
     }
 }
