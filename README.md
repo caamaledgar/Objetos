@@ -155,8 +155,93 @@ public class MainActivity extends AppCompatActivity {
 
 ````
 
+Ahora como actividad hagamos que estos objetos se muestren en nuestro dispositivo, para ello crearemos dos botones, que tendrán  la funci{on de mostrar la información en el TexView.
+
+Primero hay que poner un ID al TextView dendro de nuestro archivo XML, para poder referenciarlo en le Activity Main
+
+````
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+````
+
+Dentro del mismo Layout crearmos dos botones dentro de un LinearLayout
+Note que el Boton para el objeto1 llamado btnObjeto1, cuenta con un atributo onClick
+````
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvMensaje">
+        <Button
+            android:id="@+id/btnObjeto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Objeto 1" />
+        <Button
+            android:id="@+id/btnObjeto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Objeto 2" />
+    </LinearLayout>
+
+````
+Ya comtamos con lo necesario para que nuestra aplicación realice lo solicitado.
+Así que ahora trabajamos en nuestro MainActivity.java
 
 
+Primero instanciaremos nuestros objetos del XML, para poder referenciarlos desde la clase java
+````
+        //Instanciar los objetos de nuestro XML
+        TextView textView = (TextView) findViewById(R.id.tvMensaje);
+        Button btnObjeto1 = (Button) findViewById(R.id.btnObjeto1);
+        Button btnObjeto2 = (Button) findViewById(R.id.btnObjeto2);
+
+````
+
+Despues añadiremos unos escuchas a nuestos objetos botones, con el método setOnClickListener
+Para poder asignarle un valor a nuestro TextView, se utiliza en método setText
+Añadimos que para el botón 1, se imprima el toString de lavadora y para el botón dos el toString de lavadoraSecadora
+
+````
+        btnObjeto1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textView.setText(lavadora.toString());
+            }
+        });
+
+        btnObjeto2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textView.setText(lavadoraSecadora.toString());
+            }
+        });
+
+````
+
+Y vemos los resultados en nuestro dispositivo virtual
+
+objeto 1
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/objeto1.png)
+
+
+objeto2
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/objeto2.png)
 
 
 
