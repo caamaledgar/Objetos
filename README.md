@@ -117,7 +117,16 @@ public class MainActivity extends AppCompatActivity {
 
 En la sección del Run, en la parte inferior a través del evento Log, podemos visualizar nuestro objeto instanciado con los valores que les asignamos
 
-![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/generator.png)
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/runObjeto.png)
+
+A través de nuestro objeto podemos generar nuevas instancias de él, ahora lo crearemos y le asignaremos valores en un mismo paso, utilizando en otro constructor
+
+````
+        //Creando una segunda instancia de nuestro objeto
+        Lavadora lavadoraSecadora = new Lavadora("IEM", "Secado Automático");
+        Log.d("Objeto lavadora-Secadora", lavadoraSecadora.toString());
+
+````
 
 
 
