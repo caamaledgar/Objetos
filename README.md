@@ -37,3 +37,18 @@ Para crear un Objeto en Java, y propiamente en Android Studio, siguiendo los pri
 }
 ````
 
+En la misma clase, porterior a crear los atributos, es necesario crear los constructores, para que los objetos pudan instanciarse, unos sin parámetros y otro con los parámetros que queremos ingrear al objeto de manera directa.
+
+````
+    // Constructores
+    public Lavadora() {
+    }
+
+    public Lavadora(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+````
+
+
+
