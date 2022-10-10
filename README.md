@@ -39,6 +39,12 @@ Para crear un Objeto en Java, y propiamente en Android Studio, siguiendo los pri
 
 En la misma clase, porterior a crear los atributos, es necesario crear los constructores, para que los objetos pudan instanciarse, unos sin parámetros y otro con los parámetros que queremos ingresar al objeto de manera directa.
 
+Para ello podemos ayudarnos del IDE, para que él nos genere el código, con el botón contextual del mouse, o click izquierdo, se habilita este menú
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/menuContextual.png)
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/generator.png)
+
 
 ````
     // Constructores
@@ -53,11 +59,6 @@ En la misma clase, porterior a crear los atributos, es necesario crear los const
 
 
 Para poder registrar y extraer los valores en nuesto objeto es necesario crear los métos getter y setter
-Para ello podemos ayudarnos del IDE, para que él nos genere el código, con el botón contextual del mouse, o click izquierdo, se habilita este menú
-
-![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/menuContextual.png)
-
-![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/generator.png)
 
 ````
     // Getter & Setter
