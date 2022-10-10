@@ -237,10 +237,12 @@ Añadimos que para el botón 1, se imprima el toString de lavadora y para el bot
 Y vemos los resultados en nuestro dispositivo virtual
 
 objeto 1
+
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/objeto1.png)
 
 
 objeto2
+
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/objeto2.png)
 
 
