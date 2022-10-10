@@ -92,6 +92,35 @@ Como un método adicional que nos puede servir para traer los valores con los qu
     }
 ````
 
+Una vez creado nuestro objeto ya podemos trabajarlos en nuesto MainActivity
+Usando la primera forma del constructor, sin parámetros
+
+````
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        //Creando una instancia de nuestro objeto
+        Lavadora lavadora   = new Lavadora();
+
+        lavadora.setMarca("Mabe");
+        lavadora.setModelo("Lavado Autómatico");
+
+        Log.d("Objeto lavadora", lavadora.toString());
+        
+    }
+}
+````
+
+En la sección del Run, en la parte inferior a través del evento Log, podemos visualizar nuestro objeto instanciado con los valores que les asignamos
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/generator.png)
+
+
+
 
 
 
