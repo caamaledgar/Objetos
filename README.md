@@ -317,5 +317,61 @@ Nota: Para trabajar Glide desde fragmentos utilizar la vista y el contexto de la
 
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagenGlide1.png)
 
+Ya traemos una imágen desde Internet
+Añadamoles más contexto a nuestra Aplicación
+Incluyamos 3 objetos de Tipo TextView para un título, subtitulo y descripciónm en nuestro XML, si bien los datos son HardCode, no sirven para ver de manera visual su comportamiento.
+
+````
+    <LinearLayout
+        android:id="@+id/llcontenido1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/ivlogo1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvCiudad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Campeche" />
+
+            <TextView
+                android:id="@+id/tvDescripcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ciudad de las Murallas" />
+
+            <TextView
+                android:id="@+id/tvDetalle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi corporis dolor, eum illum magni maiores odio, omnis quod reprehenderit, sapiente tempore voluptatem! Delectus, voluptates" />
+
+        </LinearLayout>
+    </LinearLayout>
+````
+
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagenGlide1.png)
+
+
 
 
