@@ -16,15 +16,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_margin="20dp"
+        android:orientation="horizontal"
         android:padding="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvMensaje">
+        app:layout_constraintTop_toBottomOf="@+id/tvMensaje"
+        tools:layout_editor_absoluteX="20dp">
+
         <Button
             android:id="@+id/btnObjeto1"
             android:layout_width="match_parent"
@@ -32,6 +36,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="Objeto 1" />
+
         <Button
             android:id="@+id/btnObjeto2"
             android:layout_width="match_parent"
@@ -40,6 +45,104 @@
             android:layout_weight="1"
             android:text="Objeto 2" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llcontenido1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/ivlogo1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvCiudad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Campeche" />
+
+            <TextView
+                android:id="@+id/tvDescripcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ciudad de las Murallas" />
+
+            <TextView
+                android:id="@+id/tvDetalle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi corporis dolor, eum illum magni maiores odio, omnis quod reprehenderit, sapiente tempore voluptatem! Delectus, voluptates" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/spLinea1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/llcontenido1">
+    </Space>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spLinea1">
+
+        <ImageView
+            android:id="@+id/ivlogo2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvCiudad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Yucatán" />
+
+            <TextView
+                android:id="@+id/tvDescripcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="La Ciudad Blanca" />
+
+            <TextView
+                android:id="@+id/tvDetalle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Adipisicing elit. Blanditiis commodi corporis dolor, eum illum magni maiores odio, omnis quod reprehenderit, sapiente tempore voluptatem! Delectus, voluptates" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
