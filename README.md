@@ -315,7 +315,7 @@ Nota: Para trabajar Glide desde fragmentos utilizar la vista y el contexto de la
                 .into(imageView);
 ````
 
-![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagen Glide1..png)
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagenGlide1..png)
 
 
 
