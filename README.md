@@ -370,7 +370,89 @@ Incluyamos 3 objetos de Tipo TextView para un título, subtitulo y descripciónm
 ````
 
 
-![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagenGlide1.png)
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagenGlide2.png)
+
+Ya tenemos una visión más clara de como tratar las imágenes para trasformar nuestra UI
+Añadamosle un separador y dupliquemos la imágen y los TextView
+
+````
+    <Space
+        android:id="@+id/spLinea1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/llcontenido1">
+    </Space>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spLinea1">
+
+        <ImageView
+            android:id="@+id/ivlogo2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvCiudad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Yucatán" />
+
+            <TextView
+                android:id="@+id/tvDescripcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="La Ciudad Blanca" />
+
+            <TextView
+                android:id="@+id/tvDetalle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Adipisicing elit. Blanditiis commodi corporis dolor, eum illum magni maiores odio, omnis quod reprehenderit, sapiente tempore voluptatem! Delectus, voluptates" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+````
+
+Modifiquemos nuestro archivo Java, 
+
+
+````
+        ImageView ivLogo2 = (ImageView) findViewById(R.id.ivlogo2);
+        
+        // ...
+
+        urlLogoPrincipal = "https://blog.xcaret.com/es/wp-content/uploads/2014/06/portada-Blogs-1080x640.jpg";
+        Glide.with(this)
+                .load(urlLogoPrincipal)
+                .error(getApplicationContext().getDrawable(android.R.drawable.presence_offline))
+                .fitCenter()
+                .circleCrop()
+                .into(ivLogo2);
+        
+````
+
+Si llegamos al final, ya tenemos un Dummy de una mini red social.
+Excelente ...
+
+
+
+![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagenesGlide.png)
 
 
 
