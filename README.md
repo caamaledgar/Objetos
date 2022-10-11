@@ -318,7 +318,15 @@ Nota: Para trabajar Glide desde fragmentos utilizar la vista y el contexto de la
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/imagenGlide1.png)
 
 Ya traemos una imágen desde Internet
-Añadamoles más contexto a nuestra Aplicación
+
+Nota: Si queremos utilizar nuestro repositorio de GitHub para guardar nuestras imagenes tenemos que obtener la ruta real donde se encuentran nuestro archivo, con el click contextual o click izquierdo podemos guradar la ruta, los ejemplos siguientes muestrn en la ruta 1 nos muestra la ruta que nos visualiza de primera instancia GitHub, si rasteamos la ruta real, nos dará una direccion con una estructura un poco diferente.
+
+````
+        //urlLogoPrincipal = "https://github.com/caamaledgar/documentationProjects/blob/main/Logos/itchina.jpg";
+        urlLogoPrincipal = "https://raw.githubusercontent.com/caamaledgar/documentationProjects/main/Logos/itchina.jpg";
+````
+
+Con esto aprendido ya podemos seguir trabajando con nuestra proyecto, así que añadamoles más diseño a nuestra Aplicación
 Incluyamos 3 objetos de Tipo TextView para un título, subtitulo y descripciónm en nuestro XML, si bien los datos son HardCode, no sirven para ver de manera visual su comportamiento.
 
 ````
