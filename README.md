@@ -246,3 +246,75 @@ objeto2
 ![](https://github.com/caamaledgar/documentationProjects/blob/main/objetos/objeto2.png)
 
 
+Ahora aprenderemos a incorporar Imágenes obtenidas desde Internet, a nuestro proyecto, utilizando la libreria Glide.
+En el archivo build.gradle de la app, se añade las dependencias de glide
+    
+````
+dependencies{
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+}
+````
+
+
+Incluir en archivo AndroidManifiest.xml la funcionalidad para visualizar archivos desde Internet
+
+````
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+````
+
+Modificar nuestro XML, para añadir un objeto de tipo ImageView, nuestro objeto debe tener un ID, para poder instanciarlo desde nuesto código Java
+````
+    <LinearLayout
+        android:id="@+id/llcontenido1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/ivlogo1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+    </LinearLayout>
+
+````
+
+
+Añadir la funcionalidad en nuestro Activity para consumir imágenes desde una URL
+
+````
+        // Crear variable para la URL de tipo String
+        String urlLogoPrincipal;
+        ImageView imageView = view.findViewById(R.id.ivlogo1);
+        urlLogoPrincipal = "https://itchina.edu.mx/wp-content/uploads/2019/10/itchina-1.jpg";
+        Glide.with(this)
+             .load(urlLogoPrincipal)
+             .error(getApplicationContext().getDrawable(android.R.drawable.presence_offline))
+             .fitCenter()
+             .circleCrop()
+             .into(imageView);
+
+````
+
+Nota: Para trabajar Glide desde fragmentos utilizar la vista y el contexto de la vista
+````
+        Glide.with(view)
+                .load(urlLogoPrincipal)
+                .error(view.getContext().getDrawable(android.R.drawable.presence_offline))
+                .fitCenter()
+                .circleCrop()
+                .into(imageView);
+````
+
+
+
+
