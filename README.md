@@ -200,7 +200,7 @@ Note que el Boton para el objeto1 llamado btnObjeto1, cuenta con un atributo onC
     </LinearLayout>
 
 ````
-Ya comtamos con lo necesario para que nuestra aplicación realice lo solicitado.
+Con esta actividad finalizada, ya contamos con lo objetos necesarios para que nuestra aplicación realice lo solicitado.
 Así que ahora trabajamos en nuestro MainActivity.java
 
 
@@ -319,7 +319,8 @@ Nota: Para trabajar Glide desde fragmentos utilizar la vista y el contexto de la
 
 Ya traemos una imágen desde Internet
 
-Nota: Si queremos utilizar nuestro repositorio de GitHub para guardar nuestras imagenes tenemos que obtener la ruta real donde se encuentran nuestro archivo, con el click contextual o click izquierdo podemos guradar la ruta, los ejemplos siguientes muestrn en la ruta 1 nos muestra la ruta que nos visualiza de primera instancia GitHub, si rasteamos la ruta real, nos dará una direccion con una estructura un poco diferente.
+Nota: Si queremos utilizar nuestro repositorio de GitHub para guardar nuestras imagenes tenemos que obtener la ruta real donde se encuentran nuestro archivo, con el click contextual o click izquierdo podemos guradar la ruta, en los ejemplos siguientes se muestran que en la ruta 1 es la que nos vizualuza por default la instancia GitHub, si rasteamos la ruta real, posicionando nuestro cursor sobre la imgen y con el boton izquierdo nos dará una direccion URL con una estructura un poco diferente. Para que el Glide pueda desplegar las imagnes es necesario utilizar la ruta real.
+
 
 ````
         //urlLogoPrincipal = "https://github.com/caamaledgar/documentationProjects/blob/main/Logos/itchina.jpg";
